@@ -229,5 +229,9 @@ java -jar kafka.consumer-1.0.jar --server.port=8094 --spring.application.name=ka
 
 ---
 
-Next: You can now verify messages flowing in Kafka UI and Schema Registry UI.
+## 🔗 GitHub Repository
+
+📁 You can find the full source code and Spring Boot integration here:
+
+👉 [Spring BootConsumer Repo](https://github.com/sachinnagode/kafka.consumer)
 
