@@ -1,0 +1,19 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: kafka-producer
+
+  kafka:
+    bootstrap-servers: localhost:7092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      properties:
+        schema.registry.url: http://localhost:7081
+
+logging:
+  level:
+    org.apache.kafka: INFO
+    org.springframework.kafka: DEBUG
